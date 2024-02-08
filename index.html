@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home_Page</title>
+    <style>
+        
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+header span:nth-child(2) {
+    font-size: 30px;
+}
+
+header span:nth-child(2) a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    margin: auto;
+    filter: blur(50%);
+    text-align: center;
+    margin-top: 13%;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 34%;
+    padding: 5px;
+}
+
+body{
+    background-image: url("home.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+}
+.footer{
+    background-color: rgb(24, 58, 87);
+    color:rgb(255, 255, 255);
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+.footer_text{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <span>
+            <h1 onpointerover="myFunction()">Document Portal</h1>
+
+    <script>
+    function myFunction() {
+      const myCollection = document.getElementsByTagName("h1");
+      for (let i = 0; i < myCollection.length; i++) {
+        myCollection[i].style.color = "aqua";
+      }
+    }
+    </script>    
+        </span>
+        <span>
+            <a href="l.html">Login</a>
+            <a href="rig.html">Register</a>
+            <a href="payment.html">Payment</a>
+            <a href="team.html">Profile</a>
+            <a href="cat.html">Products</a>
+        </span>
+    </header>
+    <main>
+        <h2 ondblclick="fun()">Welcome to our document store.</h2>
+        
+    <script>
+        function fun() {
+          const myCollection = document.getElementsByTagName("h2");
+          for (let i = 0; i < myCollection.length; i++) {
+            myCollection[i].style.color = "white";
+          }
+        }
+        </script>    
+    </main>
+    <footer class="footer">
+        <p class="footer_text">Copyright &copy;2023 SOMESH</p>
+    </footer>
+    
+  
+</body>
+</html>
